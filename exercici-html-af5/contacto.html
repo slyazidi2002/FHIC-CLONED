@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prácticas de FHiC - Wesic</title>
+  <link rel="stylesheet" href="./styleContact.css" /> 
+</head>
+
+<body>
+    <header>
+
+        <img class="image" src="wesicpfp.jpeg" alt="Wesic logo" height="70">
+
+        <ul id="outer">
+            <li><a href="index.html" title="Ir a inicio">Inicio</a></li>
+            <li><a href="proyecto.html" title="Conoce nuestro proyecto">Proyecto Web</a></li>
+            <li><a href="nosotros.html" title="Conócenos">Miembros</a></li>
+        </ul>
+
+
+    </header>
+
+    <main>
+        <div class="title">
+            <h1>¡Danos tu opinión!</h1>
+        </div>
+        <div id="form_and_principios">
+        <form>
+            <section>
+                <h2>Datos Personales</h2>
+                <label for="fname">Nombre<span class="asterisco">*</span>:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="Tu nombre" required><br>
+                <label for="lname">Apellidos:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Tus apellidos"><br>
+
+                <h2>Información de contacto</h2>
+                <label for="fname">Teléfono<span class="asterisco">*</span>:</label><br>
+                <input type="text" id="phone" name="phone"required placeholder="Tu teléfono"><br>
+                <label for="lname">Correo electrónico<span class="asterisco">*</span>:</label><br>
+                <input type="text" id="mail" name="mail" placeholder="Tu correo" required>
+            </section>
+            <secion>
+                <h2>Motivo de contacto</h2>
+                <label for="radio" id="motivo"> Motivo<span class="asterisco">*</span>:</label>
+                <section id="radio">
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="html">Descontento con el servicio</label><br>
+                    <input type="radio" id="css" name="fav_language" value="CSS">
+                    <label for="css">Propuestas comerciales</label><br>
+                    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                    <label for="javascript">Sugerencias sobre Wesic</label><br>
+                    <input type="radio" id="otros" name="fav_language" value="otro">
+                    <label for="javascript">Otro: </label> <input type="text" id="otro" name="lname" placeholder="Otro motivo">
+                </section>
+            </secion>
+
+            <section>
+                <h2>Detalles</h2>
+                <label for="opinion">Tu opinión<span class="asterisco">*</span>:</label>
+                <textarea name="skills" id=opinion placeholder="Escribe tu opinión aquí" required></textarea>
+
+
+            </section>
+
+            <section id="enviar">
+                <button type="submit" style="background-color: #3498db; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Enviar</button>
+             </form>
+
+            </section>
+
+            
+        </form>
+        <section id="principios">
+            <p>Los principios de diseño que hemos aplicado al diseñar este form han sido:</p>
+            <ul>
+                <li>Preguntar solo lo necesario (evitando preguntar datos extra como ciudad, código postal, etc.)</li>
+                <li>Ordenar el formulario de forma lógica (primero información personal i después la queja o sugerencia)</li>
+                <li>Información relacionada por grupos (información personal, información para contactar, información sobre la queja o sugerencia)</li>
+                <li>Evitamos el uso de más de una columna</li>
+                <li>Campos obligatorios, reducimos los campos obligatorios a lo mínimo</li>
+                <li>Número de palabras (evitamos detallar excesivamente qué información han de introducir los usuarios)</li>
+                <li>"Sentence case" para hacer más rápida la lectura en frases largas</li>
+                <li>Las etiquetas por encima de los "text input"</li>
+                <li>Distinción visual entre acciones primarias y secundarias de los botones</li>
+                <li>Evitar botón de reset</li>
+                
+            </ul>
+
+        </section>
+    </div>
+
+    </main>
+
+    <footer>
+        <p>
+            Copyright &copy; FHiC 23-24 - Wesic. 
+          </p>
+        <p></p>
+    </footer>
+</body>
+
+</html>
