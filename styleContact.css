@@ -4,30 +4,50 @@
 
 
 header {
-    background-color: rgb(116, 151, 255);
+    overflow: hidden;
+    background-color: #889cd376;
+
     padding: 10px;
     margin-top: 0;
-    display: flex;
-    /* Use flexbox */
-    align-items: center;
-    margin: auto;
+    
 
     ul,
     img,
     li {
         display: inline-block;
         margin: 0 20px;
+        vertical-align: middle; /* Align the items vertically */
     }
 
+    #outer {
+        margin-top:10px; /*no he encontrado otra solucion para centrarlo en vertical sin usar flexbox*/
+        float: right;
+    }
+
+    a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+    }
+    a.choosen {
+        background-color: rgba(15, 57, 244, 0.608);
+        color: white;
+      }
+
     li {
+
         text-align: center;
         font-size: larger;
     }
 
     a:hover {
-        color: #ffffff;
-        /* Set background color when hovered */
-
+        background-color: #ddd;
+        color: black;
     }
 }
 
@@ -46,20 +66,24 @@ body {
 
 
 .title {
-
+    margin-top: 10px;
     text-align: center;
     font-size: x-large;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 
-main{
+/*main{
     display: flex;
     flex-direction: column;   
-}
+}*/
 #form_and_principios{
     display: flex;
-    padding:0 5%
+    padding: 0 5%;
+
+    min-height: calc(100vh - 40vh);
+    width: 100%;
+    justify-content: center;
 }
 
 form{
@@ -72,26 +96,44 @@ form{
     padding: 1%
     
 }
-input[type="text"],
-textarea{
+/*input[type="text"]{
     font-family: inherit;
     font-size: 100%;
     padding: 0;
     margin: 2% 0;
-    box-sizing: border-box;
-    min-width: 500px;
+    box-sizing:content-box;
+
+    
+    //max-width: 100%;
+    //min-width: 300px; mierdon de solucion    
+    
+}*/
+
+input[type="text"], textarea{
+    margin-bottom: 7px;
+}
+
+label {
+    font-weight:550;
 }
 
 .asterisco{
-    color: red;
+    color: rgb(255, 0, 0);
 }
 
 #radio{
     font-size: 80%;
 }
-#otro{
-    width: 81%;
-}
+/*#otro{
+    //width: 100%;
+
+    //min-width: 300px;
+    height: 50%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+   
+}*/
+
 #enviar{
     display: flex;
     width: 100%;
@@ -114,17 +156,27 @@ textarea{
 
 footer {
     background-color: rgb(116, 151, 255);
-    padding: 10px;
-    margin-top: 0;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    
     display: flex;
     /* Use flexbox */
     align-items: center;
     margin: auto;
+    
+}
 
+footer>p{
+    margin-top:10px;
 }
 
 a:hover {
-    color: #a30000;
+    color: #e5dbdb;
     /* Set background color when hovered */
 
+}
+
+h2 {
+    margin-top: 15px;
+    color:rgba(91, 91, 255, 0.675)
 }

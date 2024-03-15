@@ -4,30 +4,50 @@
 
 
 header {
-    background-color: rgb(116, 151, 255);
+    overflow: hidden;
+    background-color: #889cd376;
+
     padding: 10px;
     margin-top: 0;
-    display: flex;
-    /* Use flexbox */
-    align-items: center;
-    margin: auto;
+    
 
     ul,
     img,
     li {
         display: inline-block;
         margin: 0 20px;
+        vertical-align: middle; /* Align the items vertically */
     }
 
+    #outer {
+        margin-top:10px; /*no he encontrado otra solucion para centrarlo en vertical sin usar flexbox*/
+        float: right;
+    }
+
+    a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+    }
+    a.choosen {
+        background-color: rgba(15, 57, 244, 0.608);
+        color: white;
+      }
+
     li {
+
         text-align: center;
         font-size: larger;
     }
 
     a:hover {
-        color: #ffffff;
-        /* Set background color when hovered */
-
+        background-color: #ddd;
+        color: black;
     }
 }
 
@@ -50,6 +70,9 @@ body {
     text-align: center;
     font-size: x-large;
     font-family: Arial, Helvetica, sans-serif;
+
+    margin-top:15px;
+    margin-bottom: 15px;
 }
 
 
@@ -74,6 +97,8 @@ p {
 h2 {
     font-size: larger;
     text-align: center;
+    margin-top: 3%;
+
 }
 
 img {
@@ -94,15 +119,18 @@ img {
 
 footer {
     background-color: rgb(116, 151, 255);
-    padding: 10px;
-    margin-top: 0;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    
     display: flex;
     /* Use flexbox */
     align-items: center;
     margin: auto;
-
-    height: 7vh;
+    
 }
 
+footer>p{
+    margin-top:10px;
+}
 
 /*members part**/
